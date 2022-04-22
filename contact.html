@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main - Responsive Web Workshop</title>
+    <link rel="stylesheet" href="./stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./stylesheets/styles.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/tgavrity">Github</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/tyler-gavrity/">LinkedIn</a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+    
+    <div id="profile" class="text-center">
+      <img
+        class="img-fluid rounded"
+        alt="Responsive image"
+        src="https://media-exp1.licdn.com/dms/image/C4E03AQFafawoyf-BHg/profile-displayphoto-shrink_800_800/0/1648770619183?e=1655942400&v=beta&t=RGIguXphsH-gJlyIUuSQbSqQkZZ0jF8gkTMx68-uViU"
+      />
+
+      <h1>Tyler Gavrity</h1>
+      <h3>Software Developer</h3>
+      <hr />
+    </div>
+
+    <div id="contactForm" class="text-center col-lg-6">
+      <form
+        id="fs-frm"
+        name="complaint-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/xyyobggw"
+        method="post"
+      >
+        <fieldset id="fs-frm-inputs">
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="full-name"
+              placeholder="First and Last"
+              required=""
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input
+              type="email"
+              name="_replyto"
+              class="form-control"
+              id="email-address"
+              placeholder="name@example.com"
+              required=""
+            />
+          </div>
+          <!-- <label for="email-address">Email Address</label>
+          <input
+            type="email"
+            name="_replyto"
+            id="email-address"
+            placeholder="email@domain.tld"
+            required=""
+          /> -->
+          <div class="form-group">
+            <label for="telephone">Telephone Number (Optional)</label>
+            <input
+              type="telephone"
+              name="telephone"
+              class="form-control"
+              id="telephone"
+              placeholder="(555) 555-5555"
+            />
+          </div>
+          <div class="form-group">
+            <label for="complaint">Message</label>
+            <textarea
+              rows="6"
+              name="complaint"
+              class="form-control"
+              id="complaint"
+              placeholder="Leave a message"
+              required=""
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input
+              type="hidden"
+              name="_subject"
+              id="email-subject"
+              value="Complaint Form Submission"
+            />
+          </div>
+        </fieldset>
+        
+        <input class="btn btn-primary" type="submit" value="Submit">
+      </form>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
